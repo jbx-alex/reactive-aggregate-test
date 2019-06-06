@@ -1,0 +1,48 @@
+.nav-tabs {
+    .nav-item{
+        margin-bottom: -2px;
+    }
+    .nav-item + .nav-item{
+        margin-left: 0;
+    }
+    .nav-link {
+        color: $gray;
+        background: #fff;
+        border: 1px solid #d1d4d7;
+        &.hover {
+            color: $gray-dark;
+        }&.focus {
+             color: $gray-dark;
+         }
+        &.active {
+            color: $gray-dark;
+            background: #fff;
+            border-color: $border-color;
+            border-bottom-color: #fff;
+            font-weight: bold;
+            &:focus {
+                color: $gray-dark;
+                background: #fff;
+                border-color: $border-color;
+                border-bottom-color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.tab-content {
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid $border-color !important;
+    .tab-pane {
+        padding: $spacer-y $spacer-x;
+    }
+}
+
+.card-block {
+    .tab-content {
+        margin-top: 0;
+        border: 0;
+    }
+}

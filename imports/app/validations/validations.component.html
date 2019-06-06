@@ -1,0 +1,29 @@
+<div class="animated fadeIn mt-1">
+    <div class="card">
+        <div class="card-header">
+            <strong>Validation list</strong>
+        </div>
+        <div class="card-block">
+            <ngb-tabset [activeId]="activeIdString">
+                <ngb-tab title="Pending invoice ({{pendingInvoiceTotal}})" id="pendingInvoice">
+                    <ng-template ngbTabContent>
+                        <validations-list
+                                [find]="pendingInvoice"
+                                [status]="STATUS_VALIDATION_PENDING_INVOICE"
+                                (totalValidations)="totalPendingInvoice($event)">
+                        </validations-list>
+                    </ng-template>
+                </ngb-tab>
+                <ngb-tab title="Invoices ({{invoiceIncidenceTotal}})" id="invoiceIncidence">
+                    <ng-template ngbTabContent>
+                        <validations-list
+                                [find]="invoiceIncidence"
+                                [status]="STATUS_VALIDATION_INVOICED"
+                                (totalValidations)="totalInvoiceIncidence($event)">
+                        </validations-list>
+                    </ng-template>
+                </ngb-tab>
+            </ngb-tabset>
+        </div>
+    </div>
+</div>

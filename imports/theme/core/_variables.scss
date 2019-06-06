@@ -1,0 +1,351 @@
+//Color system
+$white: #FFF;
+$gray-100: #F8F9Fa;
+$gray-200: #E4E5E6;
+$gray-300: #D1D4D7;
+$gray-400: #869FAC;
+$gray-500: #678898;
+$gray-600: #9FA1A3;
+$gray-700: #3E515B;
+$gray-800: #2A2C36;
+$gray-900: #151B1E;
+
+$gray-dark: #2A2C36;
+$gray: #9FA1A3;
+$gray-light: #D1D4D7;
+$gray-lighter: #E4E5E6;
+$gray-lightest: #F8F9FA;
+
+$brand-primary: #006B94 !default;
+$brand-success: #4DBD74 !default;
+$brand-info: #63C2DE !default;
+$brand-warning: #F8CB00 !default;
+$brand-danger: #F86C6B !default;
+$brand-inverse: $gray-dark !default;
+$brand-own: #0D3F52 !default;
+$brand-warning-transparent: rgba(240, 166, 0, 0.5);
+
+//Core Admin Variables
+$enable-sidebar-nav-rounded: false !default;
+$border-color: $gray-200 !default;
+$layout-transition-speed: .25s !default;
+
+//Social Colors
+$facebook: #3B5998 !default;
+$twitter: #00ACED !default;
+$linkedin: #4875B4 !default;
+$google-plus: #D34836 !default;
+$flickr: #FF0084 !default;
+$tumblr: #32506D !default;
+$xing: #026466 !default;
+$github: #4183c4 !default;
+$html5: #E34f26 !default;
+$openid: #F78C40 !default;
+$stack-overflow: #FE7A15 !default;
+$youtube: #B00 !default;
+$css3: #0170BA !default;
+$dribbble: #EA4C89 !default;
+$google-plus: #BB4B39 !default;
+$instagram: #517FA4 !default;
+$pinterest: #CB2027 !default;
+$vk: #45668E !default;
+$yahoo: #400191 !default;
+$behance: #1769FF !default;
+$dropbox: #007EE5 !default;
+$reddit: #FF4500 !default;
+$spotify: #7AB800 !default;
+$vine: #00BF8F !default;
+$foursquare: #1073AF !default;
+$vimeo: #AAD450 !default;
+
+//Spacing
+$spacer:   1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+$spacers: (
+    q: (
+        x: ($spacer-x * 0.25),
+        y: ($spacer-y * 0.25)
+    ),
+    h: (
+        x: ($spacer-x * 0.5),
+        y: ($spacer-y * 0.5)
+    ),
+    0: (
+        x: 0,
+        y: 0
+    ),
+    1: (
+        x: $spacer-x,
+        y: $spacer-y
+    ),
+    2: (
+        x: ($spacer-x * 1.5),
+        y: ($spacer-y * 1.5)
+    ),
+    3: (
+        x: ($spacer-x * 3),
+        y: ($spacer-y * 3)
+    )
+);
+
+//Grid columns
+//
+//Set the number of columns and specify the width of the gutters.
+$grid-columns: 12 !default;
+$grid-gutter-width-base: 30px !default;
+$grid-gutter-widths: (
+        xs: $grid-gutter-width-base,
+        sm: $grid-gutter-width-base,
+        md: $grid-gutter-width-base,
+        lg: $grid-gutter-width-base,
+        xl: $grid-gutter-width-base
+) !default;
+
+//Body
+$body-color: $gray-900 !default;
+$logoutbutton-height: 49px;
+
+//Navbar
+$navbar-height: 55px;
+$navbar-bg: #FFF;
+$navbar-border: (
+    bottom: (
+        size: 1px,
+        style: solid,
+        color: $border-color
+    )
+) !default;
+$navbar-brand-width: 200px;
+$navbar-brand-bg: #FFF;
+$navbar-brand-logo: url('../img/logo.png');
+$navbar-brand-logo-size: 80% auto;
+$navbar-brand-logo-size-mobile: auto 50%;
+$navbar-brand-border: (
+    bottom: (
+        size: 1px,
+        style: solid,
+        color: $border-color
+    )
+) !default;
+$navbar-brand-minimized-width: 50px !default;
+$navbar-brand-minimized-bg: $navbar-brand-bg !default;
+$navbar-brand-minimized-logo: url('../img/logo-symbol.png') !default;
+$navbar-brand-minimized-logo-size: 24px !default;
+$navbar-brand-minimized-border: $navbar-brand-border !default;
+$navbar-color: $gray-600 !default;
+$navbar-hover-color: $gray-800 !default;
+$navbar-active-color: $gray-800 !default;
+$navbar-disabled-color: $gray-300 !default;
+$navbar-toggler-icon: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-color}' stroke-width='2.25' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-toggler-icon-hover: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-hover-color}' stroke-width='2.25' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-border-radius: $border-radius !default;
+$navbar-divider-padding-y: .425rem !default;
+$navbar-dark-toggler-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
+$navbar-dark-toggler-border: rgba(255,255,255,.1) !default;
+$navbar-light-toggler-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !default;
+$navbar-light-toggler-border: rgba(0,0,0,.1) !default;
+
+//Sidebar
+$sidebar-width: 200px !default;
+$sidebar-padding: 0 !default;
+$sidebar-minimized-width: 50px !default;
+$sidebar-minimized-height: $sidebar-minimized-width !default;
+$sidebar-compact-width: 150px !default;
+$sidebar-compact-height: $sidebar-compact-width !default;
+$sidebar-color: #FFF !default;
+$sidebar-bg: $gray-800 !default;
+$sidebar-borders: none !default;
+$mobile-sidebar-width: 220px !default;
+
+//Sidebar Header
+$sidebar-header-height: auto !default;
+$sidebar-header-bg: rgba(0, 0, 0, .2) !default;
+$sidebar-header-padding-y: .75rem !default;
+$sidebar-header-padding-x: 1rem !default;
+
+//Sidebar Form
+$sidebar-form-border: 0 !default;
+$sidebar-form-bg: darken($sidebar-bg, 10%) !default;
+$sidebar-form-color: #FFF !default;
+$sidebar-form-placeholder-color: rgba(255, 255, 255, .7) !default;
+
+//Sidebar Navigation
+$sidebar-nav-color: #FFF !default;
+$sidebar-nav-title-padding-y: .75rem !default;
+$sidebar-nav-title-padding-x: 1rem !default;
+$sidebar-nav-title-color: $gray-200 !default;
+$sidebar-nav-link-padding-y: .75rem !default;
+$sidebar-nav-link-padding-x: 1rem !default;
+$sidebar-nav-link-color: #FFF !default;
+$sidebar-nav-link-bg: transparent !default;
+$sidebar-nav-link-icon-color: $gray-600 !default;
+$sidebar-nav-link-borders: 0 !default;
+$sidebar-nav-link-hover-color: #FFF !default;
+$sidebar-nav-link-hover-bg: theme-color("primary") !default;
+$sidebar-nav-link-hover-icon-color: #FFF !default;
+$sidebar-nav-link-hover-borders: 0 !default;
+$sidebar-nav-link-active-color: #FFF !default;
+$sidebar-nav-link-active-bg: lighten($sidebar-bg, 5%) !default;
+$sidebar-nav-link-active-icon-color: theme-color("primary") !default;
+$sidebar-nav-link-active-borders: 0 !default;
+$sidebar-nav-dropdown-color: #FFF !default;
+$sidebar-nav-dropdown-bg: rgba(0, 0, 0, .2) !default;
+$sidebar-nav-dropdown-borders: 0 !default;
+$sidebar-nav-dropdown-indicator-color: $gray-600 !default;
+$sidebar-nav-dropdown-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-nav-dropdown-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$sidebar-nav-dropdown-indicator-hover-color: $sidebar-nav-link-hover-color;
+$sidebar-nav-dropdown-indicator-hover: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-nav-dropdown-indicator-hover-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
+//Sidebar Footer
+$sidebar-footer-height: auto !default;
+$sidebar-footer-bg: rgba(0, 0, 0, .2) !default;
+$sidebar-footer-padding-y: .75rem !default;
+$sidebar-footer-padding-x: 1rem !default;
+$sidebar-footer-borders: 0 !default;
+
+//Sidebar Minimizer
+$sidebar-minimizer-height: 50px !default;
+$sidebar-minimizer-bg: rgba(0, 0, 0, .2) !default;
+$sidebar-minimizer-borders: 0 !default;
+$sidebar-minimizer-indicator-color: $gray-600 !default;
+$sidebar-minimizer-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-minimizer-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$sidebar-minimizer-hover-bg: rgba(0, 0, 0, .3) !default;
+$sidebar-minimizer-hover-indicator-color: $sidebar-nav-link-hover-color !default;
+$sidebar-minimizer-hover-indicator: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='#{$sidebar-minimizer-hover-indicator-color}' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
+//Top Navigation
+$top-nav-bg: #FFF !default;
+$top-nav-color: $body-color !default;
+$top-nav-borders: (
+    bottom: (
+        size: 1px,
+        style: solid,
+        color: $border-color
+    )
+) !default;
+$top-nav-ul-borders: (
+    all: (
+        size: 1px,
+        style: solid,
+        color: $border-color
+    )
+) !default;
+$top-nav-hover-color: #FFF !default;
+$top-nav-hover-bg: theme-color("primary") !default;
+$top-nav-active-color: #FFF !default;
+$top-nav-active-bg: theme-color("primary") !default;
+$top-nav-height: $navbar-height - 15px !default;
+
+//Breadcrumb
+$breadcrumb-borders: (
+    bottom: (
+        size: 1px,
+        style: solid,
+        color: $border-color
+    )
+) !default;
+
+//Aside
+$aside-menu-width: 250px !default;
+$aside-menu-color: $gray-800 !default;
+$aside-menu-bg: #FFF !default;
+$aside-menu-borders: (
+    left: (
+        size: 1px,
+        style: solid,
+        color: $border-color
+    )
+) !default;
+$aside-menu-nav-padding-y: .75rem !default;
+$aside-menu-nav-padding-x: 1rem !default;
+
+//Pagination
+$pagination-padding-x: .75rem !default;
+$pagination-padding-y: .5rem !default;
+$pagination-padding-x-sm: .75rem !default;
+$pagination-padding-y-sm: .275rem !default;
+$pagination-padding-x-lg: 1.5rem !default;
+$pagination-padding-y-lg: .75rem !default;
+$pagination-color: $link-color !default;
+$pagination-bg: #FFF !default;
+$pagination-border-width: $border-width !default;
+$pagination-border-color: #DDD !default;
+$pagination-hover-color: $link-hover-color !default;
+$pagination-hover-bg: $gray-lighter !default;
+$pagination-hover-border: #DDD !default;
+$pagination-active-color: #FFF !default;
+$pagination-active-bg: $brand-primary !default;
+$pagination-active-border: $brand-primary !default;
+$pagination-disabled-color: $gray-light !default;
+$pagination-disabled-bg: #FFF !default;
+$pagination-disabled-border: #DDD !default;
+
+
+//Tags
+$tag-default-bg: $gray-light !default;
+$tag-primary-bg: $brand-primary !default;
+$tag-success-bg: $brand-success !default;
+$tag-info-bg: $brand-info !default;
+$tag-warning-bg: $brand-warning !default;
+$tag-danger-bg: $brand-danger !default;
+$tag-color: #FFF !default;
+$tag-link-hover-color: #FFF !default;
+$tag-font-size: 75% !default;
+$tag-font-weight: bold !default;
+$tag-padding-x: .4em !default;
+$tag-padding-y:.25em !default;
+$tag-pill-padding-x: .6em !default;
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$tag-pill-border-radius:    10rem !default;
+
+//Footer
+$footer-height: 50px !default;
+$footer-bg: $gray-100 !default;
+$footer-color: $body-color !default;
+$footer-borders: (
+    top: (
+        size: 1px,
+        style: solid,
+        color: $border-color
+    )
+) !default;
+
+//Cards
+$card-icon-bg: transparent !default;
+$card-icon-color: $body-color !default;
+
+//Z-index master list
+$zindex-navbar: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-navbar-fixed: 1030 !default;
+$zindex-navbar-sticky: 1030 !default;
+
+//Buttons
+$btn-primary-color: #FFF !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-primary-border: $btn-primary-bg !default;
+
+$btn-secondary-color: $gray-dark !default;
+$btn-secondary-bg: #FFF !default;
+$btn-secondary-border: #CCC !default;
+
+$btn-info-color: #FFF !default;
+$btn-info-bg: $brand-info !default;
+$btn-info-border: $btn-info-bg !default;
+
+$btn-success-color: #FFF !default;
+$btn-success-bg: $brand-success !default;
+$btn-success-border: $btn-success-bg !default;
+
+$btn-warning-color: #FFF !default;
+$btn-warning-bg: $brand-warning !default;
+$btn-warning-border: $btn-warning-bg !default;
+
+$btn-danger-color: #FFF !default;
+$btn-danger-bg: $brand-danger !default;
+$btn-danger-border: $btn-danger-bg !default;
+
+//Forms
+$cursor-disabled: not-allowed !default;

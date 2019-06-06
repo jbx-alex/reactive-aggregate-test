@@ -1,0 +1,70 @@
+//Bootstrap overrides
+
+//Color system
+$white: #FFF;
+$gray-100: #F8F9Fa;
+$gray-200: #E4E5E6;
+$gray-300: #D1D4D7;
+$gray-400: #869FAC;
+$gray-500: #678898;
+$gray-600: #9FA1A3;
+$gray-700: #3E515B;
+$gray-800: #2A2C36;
+$gray-900: #151B1E;
+$black: #000 !default;
+
+$blue: #20A8D8;
+$indigo: #6610F2 !default;
+$purple: #6F42C1 !default;
+$pink: #E83E8C !default;
+$red: #F86C6b;
+$orange: #F8CB00;
+$yellow: #FFC107 !default;
+$green: #4DBD74;
+$teal: #20C997 !default;
+$cyan: #63C2DE;
+
+$gray-dark: #2A2C36;
+$gray: #9FA1A3;
+$gray-light: #D1D4D7;
+$gray-lighter: #E4E5E6;
+$gray-lightest: #F8F9Fa;
+
+$brand-primary: #006B94;
+$brand-success: #4DBD74;
+$brand-info: #63C2DE;
+$brand-warning: #F8CB00;
+$brand-danger: #F86C6B;
+
+$text-muted: $gray-300 !default;
+
+$green: #00FF00;
+$white: #FFF;
+$blue: #39F;
+$black: #000;
+$brand-warning-transparent: rgba(240, 166, 0, 0.5);
+
+//Options
+
+//Quickly modify global styling by enabling or disabling optional features.
+$enable-transitions: true;
+$enable-rounded: false;
+
+//Body
+
+//Settings for the `<body>` element.
+$body-bg: #E4E5E6;
+$body-color: #3D3F42;
+
+//Progress bars
+$progress-bg: $gray-100;
+
+//Tables
+$table-bg-accent: $gray-100;
+$table-bg-hover: $gray-100;
+
+//Forms
+$input-group-addon-bg: $gray-100;
+$input-border-color: $gray-200;
+$input-group-addon-border-color: $gray-200;
+
